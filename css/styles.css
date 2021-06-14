@@ -291,7 +291,7 @@ line-height: 1.14;
 text-align: center;
 text-transform: uppercase;
 color: var(--hero-color);
-padding: 27px;
+padding: 27px 81px;
 background: var(--back-img-text);
 }
 
