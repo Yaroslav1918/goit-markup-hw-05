@@ -18,6 +18,8 @@
   --back-img-text: rgba(47, 48, 58, 0.8);
   --back-overlay: rgba(33, 150, 243, 0.9);
   --color-close-button: rgba(0, 0, 0, 0,1);
+  --color-border-input: rgba(255, 255, 255, 0.3);
+  --drop-shadow-input: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 body {
@@ -285,13 +287,15 @@ position: absolute;
 right: 0%;
 bottom: 0%;
 width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 27px;
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
-text-align: center;
 text-transform: uppercase;
 color: var(--hero-color);
-padding: 27px 81px;
 background: var(--back-img-text);
 }
 
@@ -355,6 +359,7 @@ box-shadow: var(--box-shadow);
 border-radius: 0px 0px 4px 4px;
 padding-top: 30px;
 padding-bottom: 30px;
+padding: 30px;
 
 }
 
@@ -589,8 +594,20 @@ margin-bottom: 4px;
 font-size: 16px;
 line-height: 1.8;
 color: var(--secondary-color);
-
 }
+
+.input-email {
+border: 1px solid var(--color-border-input);
+filter: var(--drop-shadow-input)
+border-radius: 4px;
+padding: 15px;
+}
+.footer .button-hero {
+  padding: 10px 62px 10px 29px;
+}
+
+
+
    /* backdrop */
 
 
